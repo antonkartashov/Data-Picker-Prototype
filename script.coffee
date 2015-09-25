@@ -8,7 +8,7 @@ moused = off
 dayz = document.getElementsByClassName('calendar-year-month__day');
 day.style.backgroundColor = "white" for day in dayz
 
-seldayz = []
+seldayz = dayz
 
 reCalc = ->
     x3 = Math.min x1, x2    
@@ -33,27 +33,25 @@ document.addEventListener "mousemove", (e) ->
     y2 = e.clientY  
     reCalc()
 
-    for day in dayz
-        if moused is on 
+    for i in [0..dayz.length]
+        day = dayz[i]
+        selday = seldayz[i]
+        if moused
             if day.getBoundingClientRect().right > x3 and
             day.getBoundingClientRect().left < x4 and
             day.getBoundingClientRect().bottom > y3 and
             day.getBoundingClientRect().top < y4
-                if day.style.backgroundColor is "white"
-                    day.style.backgroundColor = "#3399cc"
-                
 
-    for day in selddayz
-        if day.style.backgroundColor is "white"
-            day.style.backgroundColor = "#3399cc"
-        else
-            day.style.backgroundColor = "#3399cc"
+                if selday.style.backgroundColor = "white"
+                    day.style.backgroundColor = "#3399cc"
+                else
+                    day.style.backgroundColor = "white"
+
+                # day.style.backgroundColor = "#3399cc"
+                
+    
         
 document.addEventListener "mouseup", (e) ->
     selection.hidden = 1
     moused = off  
-
-    seldayz = []
-    for day in dayz
-        if day.style.backgroundColor is "#3399cc"
-            seldayz.push day
+    seldayz = dayz
