@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="bundle.css" rel="stylesheet"><title>Habidatum Platform</title><style type="text/css"></style><style type="text/css"></style>
+
+<style>
+    #ant-select {
+        border: 1px dotted #000;
+        position: absolute;
+        background-color: #06b;
+        opacity: .2;
+    }
+</style>
+
+
+</head><body class="no-overlow" style="cursor: default;">
+
+<div class="calendar">
+    <div class="popup">
+        
+
+        <div class="popup__header">
+
+            <ul class="nav">
+                <li class="">Months</li>
+                <li class="selected">Days</li>
+                <li class="">Precise time</li>
+            </ul>
+        </div>
+
+
+        <div class="popup__content">
+            <div class="calendar__main">
+                <div class="calendar-year">
+
+
+                    <div class="calendar-year__header">
+                        <div class="calendar-year__title">2015</div>
+                            <div class="calendar-year__filter">
+                                <div class="btn-group">
+                                    <button class="btn">Workdays</button>
+                                    <button class="btn">Weekends</button>
+                                    <button class="btn">Holidays</button>
+                                </div>
+                            </div>
+
+                            <div class="calendar-year__actions">
+                                <a href="http://localhost:3000/#" class="pseudo-link">Clear this year</a>
+                            </div>
+                    </div>
+
+
+                    <div style="display:inline-block; width: 250px; min-height: 1000px">&nbsp;</div>
+
+
+
+
+
+                <DIV style="display:inline-block; height: 1000px">
+
+
+                    <div id="ant-select" hidden></div>
+
+
+
+                    <div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">January</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+
+
+
+
+
+
+
+
+
+<div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">February</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">March</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">April</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <br />
+
+
+
+                    <div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">May</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">June</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">July</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">August</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <br />
+
+
+                    <div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">September</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">October</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">November</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="calendar-year-month">
+
+                        <div class="calendar-year-month__title">December</div>
+                            
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td class="dimmed weekday">Mn</td>
+                                    <td class="dimmed weekday">Tu</td>
+                                    <td class="dimmed weekday">Wd</td>
+                                    <td class="dimmed weekday">Th</td>
+                                    <td class="dimmed weekday">Fr</td>
+                                    <td class="dimmed weekday">Sa</td>
+                                    <td class="dimmed weekday">Sn</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="disabled"><div">31</div></td>
+                                    <td class="" data-date="Tue Jan 01 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">1</div></td>
+                                    <td class="" data-date="Wed Jan 02 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">2</div></td>
+                                    <td class="" data-date="Thu Jan 03 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">3</div></td>
+                                    <td class="" data-date="Fri Jan 04 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">4</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 05 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">5</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 06 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">6</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 07 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">7</div></td>
+                                    <td class="" data-date="Tue Jan 08 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">8</div></td>
+                                    <td class="" data-date="Wed Jan 09 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">9</div></td>
+                                    <td class="" data-date="Thu Jan 10 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">10</div></td>
+                                    <td class="" data-date="Fri Jan 11 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">11</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 12 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">12</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 13 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">13</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 14 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">14</div></td>
+                                    <td class="" data-date="Tue Jan 15 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">15</div></td>
+                                    <td class="" data-date="Wed Jan 16 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">16</div></td>
+                                    <td class="" data-date="Thu Jan 17 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">17</div></td>
+                                    <td class="" data-date="Fri Jan 18 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">18</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 19 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">19</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 20 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">20</div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 21 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">21</div></td>
+                                    <td class="" data-date="Tue Jan 22 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">22</div></td>
+                                    <td class="" data-date="Wed Jan 23 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">23</div></td>
+                                    <td class="" data-date="Thu Jan 24 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">24</div></td>
+                                    <td class="" data-date="Fri Jan 25 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">25</div></td>
+                                    <td class="dimmed" data-date="Sat Jan 26 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">26</div></td>
+                                    <td class="dimmed" data-date="Sun Jan 27 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">27</div></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="" data-date="Mon Jan 28 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">28</div></td>
+                                    <td class="" data-date="Tue Jan 29 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">29</div></td>
+                                    <td class="" data-date="Wed Jan 30 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">30</div></td>
+                                    <td class="" data-date="Thu Jan 31 2013 00:00:00 GMT+0300 (MSK)"><div class="calendar-year-month__day">31</div></td>
+                                    <td class="disabled"><div">1</div></td>
+                                    <td class="dimmed disabled"><div">2</div></td>
+                                    <td class="dimmed disabled"><div">3</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    </DIV>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="popup__footer">
+            <div class="calendar__info">
+                <strong>
+                    <span>0</span>
+                    <span> </span>
+                    <span>range</span>
+                </strong>
+                    <span> selected, </span>
+                    <strong>
+                        <span>0</span>
+                        <span> </span>
+                        <span>day</span>
+                    </strong>
+                                
+                    <span> total </span>
+                    <a href="http://localhost:3000/#" class="pseudo-link calendar__clear">Clear all</a>
+                </div>
+
+                <div class="calendar__action">
+                    <button class="btn btn-link">Start Exploration</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+
+</body></html>
